@@ -13,9 +13,9 @@ func main() {
 	led.Configure(machine.PinConfig{Mode: machine.PinOutput})
 	for {
 		led.Low()
-		time.Sleep(time.Millisecond * 500)
+		time.Sleep(time.Millisecond * 5000)
 
 		led.High()
-		time.Sleep(time.Millisecond * 500)
+		time.Sleep(time.Millisecond * 5000)
 	}
 }
